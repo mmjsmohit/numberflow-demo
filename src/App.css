@@ -1,38 +1,58 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  background-color: #bcaaa4;
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-value {
+  display: flex;
+  align-items: baseline;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.number-flow-value,
+.number-flow-symbol {
+  /* Styles specific to the NumberFlow component or the symbol */
+}
+
+.number-flow-suffix,
+.number-flow-symbol {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-left: 0.1em;
+}
+
+.number-flow-symbol {
+  margin-left: 0;
+}
+
+.stat-label {
+  margin-top: 0.5em;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
 }
